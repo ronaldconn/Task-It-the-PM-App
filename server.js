@@ -9,6 +9,7 @@ const logger = require('morgan')
 const connectDB = require('./config/database')
 const mainRoutes = require('./routes/main')
 const todoRoutes = require('./routes/todos')
+const PORT = process.env.PORT || 2121
 
 // Load config by calling dotenv and creating an object with the path
 require('dotenv').config({ path: './.env' })
@@ -45,5 +46,5 @@ app.use('/todos', todoRoutes)
 
 // Port
 app.listen(process.env.PORT, () => {
-  console.log('Server is running, you better catch it!')
+  console.log(`Server is running on port ${PORT}, you better catch it!`)
 })
