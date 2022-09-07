@@ -1,0 +1,11 @@
+node_modules
+.vscode/*
+.env
+replit.nix
+replit_zip_error_log.txt
+.replit
+.ds_store
+.cache
+.upm
+.DS_Store
+.breakpoints
