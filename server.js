@@ -12,7 +12,7 @@ const todoRoutes = require('./routes/todos')
 const PORT = process.env.PORT || PORT
 
 // Load config by calling dotenv and creating an object with the path
-require('dotenv').config({ path: path.resolve(__dirname, './.env') })
+require('dotenv').config({ path: './.env' })
 
 // Passport config
 require('./config/passport')(passport)
