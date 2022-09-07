@@ -11,7 +11,7 @@ const mainRoutes = require('./routes/main')
 const todoRoutes = require('./routes/todos')
 
 // Load config by calling dotenv and creating an object with the path
-require('dotenv').config({ path: './config/.env' })
+require('dotenv').config({ path: './.env' })
 
 // Passport config
 require('./config/passport')(passport)
